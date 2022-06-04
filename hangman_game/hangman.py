@@ -2,24 +2,31 @@
 
 import random
 import hangman_art
-import hangman_words
+import hangman_word
+
+
+
 maharshi = []
+y=[]
 
 print("Wel-come to ")
 print(hangman_art.logo)
 print("game\n")
-chosen_word = random.choice(hangman_words.word_list)
+chosen_word = random.choice(hangman_word.word_list)
 
 
 
 for x in range(len(chosen_word)):
-    maharshi += "_"
+ maharshi += "_"
 print(maharshi)
 m = 0
 
 endgame = False
 while not endgame:
     maggy = str(input("guess a letter  "))
+    y.append(maggy)
+    print(y)
+    
     if maggy in maharshi:
         print("you already entered the letter")
         
