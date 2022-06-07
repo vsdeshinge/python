@@ -30,8 +30,8 @@ while not run_loop:
         print(f"remaining attempts {10 - count}")
 
     if count == 6 and level_of_game == "hard":
-        print(f"you lost, the number is {chosen_number}")
+        print(f"you lost, the number is {chosen_number} ")
         run_loop = True
     if count == 10 and level_of_game == "easy":
-        print(f"you lost, the number is {chosen_number}")
+        print(f"you lost, the number is {chosen_number} ")
         run_loop = True
