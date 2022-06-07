@@ -1,4 +1,4 @@
-#from replit import clear
+from replit import clear
 
 maggy={}
 m=False
@@ -9,8 +9,8 @@ while not m:
     y=input("is there any other person who wants to bid")
     if y=="no":
         m=True
-    #else:
-        #clear()
+    else:
+        clear()
 largest=None
 for x in maggy:
     if largest is None or maggy[x]>largest:
